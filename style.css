@@ -1,0 +1,414 @@
+/* CSS Reset */
+
+html, body, h1, h2, h3, h4, h5, h6, a, p, ol, ul, li, div, span, 
+blockquote, img, small, strong, b, em, i, u, sup, sub, form, label, 
+legend, table, caption, tbody, thead, tr, th, td, article, nav, 
+aside, section, header, footer, figure, figcaption, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+*:focus {
+    outline: none;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+th {
+    text-align: inherit;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+strong, b {
+    font-weight: bold;
+}
+
+em, i {
+    font-style: italic;
+}
+
+sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+
+sub {
+    vertical-align: sub;
+    font-size: smaller;
+}
+
+small {
+    font-size: small;
+}
+
+/* General */
+
+body {
+    color: #fff;
+    line-height: normal;
+    font-weight: normal;
+    font-size: 15px;
+    font-size: 1.5rem;
+    font-family: Arial, "sans-serif";
+    background-color: rgba(21, 32, 43);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: none;
+}
+
+a {
+    color: rgba(29, 161, 242);
+    text-decoration: none;
+    transition: all .3s ease-in-out; 
+}
+
+a:hover {
+    color: rgba(26, 145, 218);
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #fff;
+    font-weight: bold;
+    line-height: 1.1;;
+}
+
+h1 {
+    font-size: 90px;
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-size: 60px;
+    margin-bottom: 40px;
+}
+
+h3 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+h4 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+h5 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+h6 {
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.button {
+    display: inline-block;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font-family: inherit;
+    background-color: rgba(29, 161, 242);
+    border: 1px solid rgba(29, 161, 242);
+    padding: 6px 20px;
+    border-radius: 50px;
+    font-size: 15px;
+    color: #fff;
+    font-weight: normal;
+    transition: all .25s ease;
+}
+
+.button:hover {
+    background-color: rgba(26, 145, 218);
+    color: #fff;
+}
+
+.button--secondary {
+    color: rgba(29, 161, 242);
+    background: transparent;
+
+}
+
+input[type="text"] {
+    background-color: rgb(37, 51, 65);
+    border: 0;
+    padding: 11px 15px;
+    width: 100%;
+    border-radius: 50px;
+    font-size: 15px;
+    color: #fff;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+::placeholder { 
+    color: rgba(136, 153, 166);
+}
+
+:-ms-input-placeholder { 
+    color: rgba(136, 153, 166);
+}
+
+::-ms-input-placeholder {
+    color: rgba(136, 153, 166);
+}
+
+.color--black {
+    background-color: #000;
+}
+
+.color--white {
+    color: #fff;
+}
+
+.color--grey {
+    color: rgba(136, 153, 166);
+}
+
+.color--darkgrey {
+    color: rgba(21, 32, 43);
+}
+
+.color--blue {
+    background-color: rgba(26, 145, 218);
+}
+
+.background--black {
+    background-color: #000;
+}
+
+.background--white {
+    background-color: #fff;
+}
+
+.background--darkgrey {
+    background-color: rgba(21, 32, 43)
+}
+
+.background--blue {
+    background-color: rgba(26, 145, 218);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.clearfix {
+    clear: both;
+}
+
+/* Grid */
+
+.grid {
+    margin-left: -30px;
+    font-size: 0;
+}
+
+.grid--flex {
+    display: flex;
+}
+
+.col {
+    padding-left: 30px;
+    display: inline-block;
+    font-size: inherit;
+}
+
+.col--1-of-1 {
+    width: 100%;
+}
+
+.col--2-of-4,
+.col--1-of-2 {
+    width: 50%;    
+}
+
+.col--1-of-3 {
+    width: 33.3333%;    
+}
+
+.col--1-of-4 {
+    width: 25%;
+}
+
+.col--2-of-3 {
+    width: 66.6666%;
+}
+
+@media only screen and (max-width: 1000px) {
+    .col--md-1-of-1 {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 365px) {
+    .col--sm-1-of-1 {
+        width: 100%;
+    }
+}
+
+/* Globals */
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* HEADER: START */
+
+.header {
+    border-bottom: 1px solid rgba(56, 68, 77);
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 9px 0;
+    width: 100%;
+    height: 53px;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+}
+
+.header_logo a {
+    color: #fff;
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+.header_search {
+    width: 100%;
+    max-width: 525px;
+    position: relative;
+}
+
+.header_search input {
+    padding: 8px 15px 8px 45px;
+    width: 100%;
+}
+
+.header_search-icon  {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    font-size: 18px;
+    transform: translateY(-50%);
+}
+
+.header_links {
+    margin-left: auto;
+}
+
+.header_links a {
+    vertical-align: middle;
+}
+
+.header_links a ~ a {
+    margin-left: 10px;
+}
+
+.header_links a:last-of-type {
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+/* HEADER: END */
+
+/** MAIN: START **/
+
+.main {
+    padding-top: 53px;
+}
+
+.main .container {
+    display: flex;
+}
+
+.main_left {
+    border-left: 1px solid rgba(56, 68, 77);
+    border-right: 1px solid rgba(56, 68, 77);
+    width: 100%;
+    max-width: 600px;
+}
+
+.main_banner img {
+    width: 100%;
+}
+
+.main_profile-image {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.main_profile-image img {
+    display: inline-block;
+    margin-top: -85px;
+    width: 140px;
+    height: 140px;
+    border-radius: 100%;
+    overflow: hidden;
+    border: 4px solid #fff;
+}
+
+/** MAIN: END **/
