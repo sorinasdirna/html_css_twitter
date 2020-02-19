@@ -331,6 +331,13 @@ input[type="text"] {
     padding: 0 10px;
 }
 
+@media only screen and (max-width: 999px) {
+    .container {
+        max-width: 600px;
+        position: relative;
+    }
+}
+
 /* HEADER: START */
 
 .header {
@@ -342,11 +349,19 @@ input[type="text"] {
     padding: 9px 0;
     width: 100%;
     height: 53px;
+    z-index: 9;
+}
+
+@media screen and (max-width: 999px) {
+    .header {
+        height: 115px;
+    }
 }
 
 .header .container {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .header_logo a {
@@ -359,6 +374,12 @@ input[type="text"] {
     width: 100%;
     max-width: 525px;
     position: relative;
+}
+
+@media screen and (max-width: 999px) {
+    .header_search {
+        max-width: calc(100% - 90px);
+    }
 }
 
 .header_search input {
@@ -391,6 +412,27 @@ input[type="text"] {
     margin-left: 15px;
 }
 
+@media screen and (max-width: 999px) {
+    .header_links {
+        width: 100%;
+    }
+    .header_links a {
+        width: 48%;
+        margin-top: 20px;
+        float: left;
+    }
+    .header_links a ~ a {
+        margin-left: 2%;
+    }
+    .header_links a:last-of-type {
+        position: absolute;
+        right: 15px;
+        width: auto;
+        top: 12px;
+        margin: 0;
+    }
+}
+
 /* HEADER: END */
 
 /** MAIN: START **/
@@ -399,8 +441,15 @@ input[type="text"] {
     padding-top: 53px;
 }
 
+@media only screen and (max-width: 999px) {
+    .main {
+        padding-top: 115px;
+    }
+}
+
 .main .container {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .main_left {
@@ -408,6 +457,13 @@ input[type="text"] {
     border-right: 1px solid rgba(56, 68, 77);
     width: 100%;
     max-width: 600px;
+}
+
+@media screen and (max-width: 999px) {
+    .main_left {
+        width: 100%;
+        max-width: 100%;
+    }
 }
 
 .main_banner img {
@@ -577,6 +633,23 @@ input[type="text"] {
 
 .main_right {
     padding: 10px 0 10px 20px;
+}
+
+@media screen and (max-width: 999px) {
+    .main_right {
+        width: 100%;
+        padding-left: 0;
+        padding-top: 20px;
+    }
+}
+
+@media screen and (max-width: 364px) {
+    .main_tabs-links {
+        display: flex;
+        white-space: nowrap;
+        width: 100%;
+        overflow-y: auto;
+    }
 }
 
 .main_right .box {
