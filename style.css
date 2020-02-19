@@ -95,7 +95,7 @@ a:hover {
 
 p {
     margin-top: 0;
-    margin-bottom: 16px;
+    margin-bottom: 10px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -144,8 +144,9 @@ h6 {
     border-radius: 50px;
     font-size: 15px;
     color: #fff;
-    font-weight: normal;
+    font-weight: bold;
     transition: all .25s ease;
+    text-align: center;
 }
 
 .button:hover {
@@ -334,7 +335,7 @@ input[type="text"] {
 
 .header {
     border-bottom: 1px solid rgba(56, 68, 77);
-    background-color: rgba(21, 32, 43);;
+    background-color: rgba(21, 32, 43);
     position: fixed;
     left: 0;
     top: 0;
@@ -439,7 +440,7 @@ input[type="text"] {
 
 .main_profile-name h1 {
     font-size: 19px;
-    font-weight: 900;
+    font-weight: bold;
     margin: 0 2px 0 0;
     vertical-align: middle;
 }
@@ -449,7 +450,7 @@ input[type="text"] {
     vertical-align: middle;
 }
 
-.main_profile-name h2 {
+.main_profile-name span {
     font-size: 15px;
     margin: 0 0 10px 0;
     font-weight: normal;
@@ -492,10 +493,218 @@ input[type="text"] {
 .main_tabs-item {
     display: none;
     border-bottom: 1px solid rgba(56, 68, 77);
-    padding: 10px 15px;
+    border-top: 1px solid rgba(56, 68, 77);
 }
 
 .main_tabs-item.js--active {
+    display: block;
+}
+
+.main_article {
+   display: flex;
+   padding: 10px 15px 5px 10px;
+   transition: all .3s ease;
+}
+
+.main_article:hover {
+    background: rgba(25, 39, 52);
+}
+
+.main_article-left {
+    max-width: 50px;
+    text-align: right;
+    width: 100%;
+    margin-right: 10px;
+}
+
+.main_article-left .main_article-icon {
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.main_article-left img {
+    border-radius: 100%;
+}
+
+.main_article-right > span {
+    font-size: 13px;
+    padding-bottom: 5px;
+    display: block;
+}
+
+.main_article-right .main_article-name h4 {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 2px 0 0;
+    vertical-align: middle;
+}
+
+.main_article-right .main_article-name img {
+    max-width: 18px;
+    vertical-align: middle;
+}
+
+.main_article-right .main_article-name i {
+    float: right;
+    font-size: 10px;
+}
+
+.main_article-right .main_article-utility {
+    display: flex;
+}
+
+.main_article-right .main_article-utility li {
+    flex: 1;
+}
+
+.main_article-right .main_article-utility i {
+    margin-right: 10px;
+}
+
+.main_article-right .main_article-more {
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.main_tabs hr {
+    background-color: rgb(37, 51, 65);
+    height: 10px;
+    border: 0;
+    margin: 0;
+}
+
+/* aside */
+
+.main_right {
+    padding: 10px 0 10px 20px;
+}
+
+.main_right .box {
+    border-radius: 14px;
+    border: 1px solid rgba(56, 68, 77);
+    overflow: hidden;
+}
+
+.main_right .box ~ .box {
+    margin-top: 15px;
+}
+
+.main_signup {
+    padding: 10px 10px 15px 10px;
+}
+
+.main_signup h4 {
+    margin: 0 0 10px 0;
+}
+
+.main_signup p {
+    font-size: 13px;
+    margin: 0 0 15px 0;
+}
+
+.main_signup a {
+    width: 100%;
+}
+
+.main_gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main_gallery .image {
+    height: 100px;
+    flex: 1 0 33.333%;
+    background:url(../images/banner.jpg) no-repeat right;
+}
+
+.main_gallery .image {
+    border: 1px solid rgba(21, 32, 43);
+}
+
+.main_suggestions {
+    background: rgba(25, 39, 52);
+    border: 0 !important;
+}
+
+.main_suggestions > * {
+    border-bottom: 1px solid rgba(56, 68, 77);
+}
+
+.main_suggestions h4 {
+    padding: 10px 15px;
+    margin: 0;
+}
+
+.main_suggestions-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.main_suggestions-item > img {
+    max-width: 50px;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
+.main_suggestions-name img {
+    max-width: 18px;
+    vertical-align: middle;
+}
+
+.main_suggestions-name h5 {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 2px 0 0;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.main_suggestions-item > a {
+    margin-left: auto;
+}
+
+.main_suggestions > a {
+    margin-left: auto;
+    border-bottom: 0;
+    margin: 15px;
+    display: inline-block;
+}
+
+.main_trends {
+    background: rgba(25, 39, 52);
+    border: 0 !important;
+}
+
+.main_trends h4 {
+    padding: 10px 15px;
+    margin: 0;
+    border-bottom: 1px solid rgba(56, 68, 77);
+}
+
+/* copyright */
+
+.copyright {
+    padding: 20px 15px;
+    font-size: 13px;
+}
+
+.copyright a {
+    display: inline-block;
+    color: rgba(136, 153, 166);
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+.copyright a:hover {
+    text-decoration: underline;
+}
+
+.copyright a i {
+    font-size: 10px;
+}
+
+.copyright span {
     display: block;
 }
 

@@ -27,7 +27,7 @@
                 </a>
             </div>
             <div class="header_search">
-                <form action="" method="" aria-label="Search form" role="search">
+                <form action="#" method="post" aria-label="Search form" role="search">
                     <div class="header_search-icon color--grey">
                         <span class="sr-only">Search icon</span>
                         <i class="fa fa-search"></i>
@@ -65,13 +65,13 @@
                         <img src="images/globe.svg" alt="Globe Icon">
                         <img src="images/globe.svg" alt="Globe Icon">
                         <img src="images/globe.svg" alt="Globe Icon">
-                        <h2 class="color--grey">@jack</h2>
+                        <span class="color--grey inline-block">@jack</span>
                         <a href="#" class="color--darkblue" aria-label="Go to bitcoin" role="button">
                             <span>#bitcoin</span>
                             <img src="images/bitcoin.png" alt="bitcoin logo">
                         </a>
                         <div class="main_profile-birth color--grey">
-                            <p><i class="fa fa-map-pin"></i> Born 19 November 1976 <i class="fa fa-calendar"></i> Joined March 2006</p>
+                            <p><i class="fa fa-lightbulb-o"></i> Born 19 November 1976 <i class="fa fa-calendar"></i> Joined March 2006</p>
                         </div>
                         <div class="main_profile-followers">
                             <strong>4,286</strong> <span class="color--grey">Following</span> &nbsp; &nbsp; <strong>4.3M</strong> <span class="color--grey">Followers</span>
@@ -79,14 +79,93 @@
                     </div>
                 </div>
                 <div class="main_tabs">
-                    <div class="main_tabs-links" role="tabs">
-                        <a class="main_tabs-link js--active" role="tabitem" data-tab=".main_tabs-item--1" tabindex="0" aria-expanded="true">Tweets</a>
-                        <a class="main_tabs-link" role="tabitem" data-tab=".main_tabs-item--2" tabindex="0" aria-expanded="false">Tweets & replies</a>
-                        <a class="main_tabs-link" role="tabitem" data-tab=".main_tabs-item--3" tabindex="0" aria-expanded="false">Media</a>
-                        <a class="main_tabs-link" role="tabitem" data-tab=".main_tabs-item--4" tabindex="0" aria-expanded="false">Likes</a>
+                    <div class="main_tabs-links" role="tablist">
+                        <a class="main_tabs-link js--active" role="tab" aria-controls="main_tabs-item--1" tabindex="0" aria-expanded="true">Tweets</a>
+                        <a class="main_tabs-link" role="tab" aria-controls="main_tabs-item--2" tabindex="0" aria-expanded="false">Tweets & replies</a>
+                        <a class="main_tabs-link" role="tab" aria-controls="main_tabs-item--3" tabindex="0" aria-expanded="false">Media</a>
+                        <a class="main_tabs-link" role="tab" aria-controls="main_tabs-item--4" tabindex="0" aria-expanded="false">Likes</a>
                     </div>
                     <div class="main_tabs-item main_tabs-item--1 js--active" aria-hidden="false">
-                        <article>Tweets</article>
+                        <article class="main_article">
+                            <div class="main_article-left">
+                                <div class="main_article-icon color--grey"><i class="fa fa-thumb-tack"></i></div>
+                                <img src="images/profile.jpg" alt="profile image">
+                            </div>
+                            <div class="main_article-right">
+                                <span class="color--grey">Pinned Tweet</span>
+                                <div class="main_article-name">
+                                    <h4 class="inline-block">jack</h4>
+                                    <img src="images/globe.svg" alt="Globe Icon">
+                                    <img src="images/globe.svg" alt="Globe Icon">
+                                    <img src="images/globe.svg" alt="Globe Icon">
+                                    <img src="images/globe.svg" alt="Globe Icon">
+                                    <span class="color--grey">@jack - 1 Mar 2018</span>
+                                    <i class="fa fa-chevron-down color--grey"></i>
+                                </div>
+                                <p>We're committing Twitter to help increase the collective health, openness, and civility of public conversation, and to hold ouerselves publicly accountable towards progress.</p>
+                                <ul class="main_article-utility color--grey">
+                                    <li><i class="fa fa-comment"></i> 22.9K</li>
+                                    <li><i class="fa fa-retweet"></i> 9.6K</li>
+                                    <li><i class="fa fa-heart"></i> 45.4K</li>
+                                    <li><i class="fa fa-download"></i></li>
+                                </ul>
+                                <a class="main_article-more" href="#">Show this thread</a>
+                            </div>
+                        </article>
+                        <hr>
+                        <article class="main_article">
+                            <div class="main_article-left">
+                                <div class="main_article-icon color--grey"><i class="fa fa-thumb-tack"></i></div>
+                                <img src="images/profile.jpg" alt="profile image">
+                            </div>
+                            <div class="main_article-right">
+                                <span class="color--grey">Pinned Tweet</span>
+                                <div class="main_article-name">
+                                    <h4 class="inline-block">jack</h4>
+                                    <img src="images/globe.svg" alt="Globe Icon">
+                                    <img src="images/globe.svg" alt="Globe Icon">
+                                    <img src="images/globe.svg" alt="Globe Icon">
+                                    <img src="images/globe.svg" alt="Globe Icon">
+                                    <span class="color--grey">@jack - 1 Mar 2018</span>
+                                    <i class="fa fa-chevron-down color--grey"></i>
+                                </div>
+                                <p>We're committing Twitter to help increase the collective health, openness, and civility of public conversation, and to hold ouerselves publicly accountable towards progress.</p>
+                                <ul class="main_article-utility color--grey">
+                                    <li><i class="fa fa-comment"></i> 22.9K</li>
+                                    <li><i class="fa fa-retweet"></i> 9.6K</li>
+                                    <li><i class="fa fa-heart"></i> 45.4K</li>
+                                    <li><i class="fa fa-download"></i></li>
+                                </ul>
+                                <a class="main_article-more" href="#">Show this thread</a>
+                            </div>
+                        </article>
+                        <hr>
+                        <article class="main_article">
+                            <div class="main_article-left">
+                                <div class="main_article-icon color--grey"><i class="fa fa-thumb-tack"></i></div>
+                                <img src="images/profile.jpg" alt="profile image">
+                            </div>
+                            <div class="main_article-right">
+                                <span class="color--grey">Pinned Tweet</span>
+                                <div class="main_article-name">
+                                    <h4 class="inline-block">jack</h4>
+                                    <img src="images/globe.svg" alt="Globe Icon">
+                                    <img src="images/globe.svg" alt="Globe Icon">
+                                    <img src="images/globe.svg" alt="Globe Icon">
+                                    <img src="images/globe.svg" alt="Globe Icon">
+                                    <span class="color--grey">@jack - 1 Mar 2018</span>
+                                    <i class="fa fa-chevron-down color--grey"></i>
+                                </div>
+                                <p>We're committing Twitter to help increase the collective health, openness, and civility of public conversation, and to hold ouerselves publicly accountable towards progress.</p>
+                                <ul class="main_article-utility color--grey">
+                                    <li><i class="fa fa-comment"></i> 22.9K</li>
+                                    <li><i class="fa fa-retweet"></i> 9.6K</li>
+                                    <li><i class="fa fa-heart"></i> 45.4K</li>
+                                    <li><i class="fa fa-download"></i></li>
+                                </ul>
+                                <a class="main_article-more" href="#">Show this thread</a>
+                            </div>
+                        </article>
                     </div>
                     <div class="main_tabs-item main_tabs-item--2" aria-hidden="true">
                         <p>Tweets & replies</p>
@@ -100,7 +179,61 @@
                 </div>
             </section>
             <aside class="main_right">
-            
+                <div class="main_signup box">
+                    <h4>New to Twitter?</h4>
+                    <p class="color--grey">Sign up now to get your own personalized timeline!</p>
+                    <a class="button" href="#" aria-label="Create new account" role="button">Sign up</a>
+                </div>
+                <div class="main_gallery box">
+                    <div class="image image--1"></div>
+                    <div class="image image--1"></div>
+                    <div class="image image--1"></div>
+                    <div class="image image--1"></div>
+                    <div class="image image--1"></div>
+                    <div class="image image--1"></div>
+                </div>
+                <div class="main_suggestions box">
+                    <h4>You might like</h4>
+                    <div class="main_suggestions-item">
+                        <img src="images/profile.jpg" alt="Biz Stone image">
+                        <div class="main_suggestions-name">
+                            <h5>Biz Stone</h5>
+                            <img src="images/globe.svg" alt="Globe Icon">
+                            <span class="color--grey">@biz</span>
+                        </div>
+                        <a href="#" class="button button--secondary" aria-label="Follow" role="button">Follow</a>
+                    </div>
+                    <div class="main_suggestions-item">
+                        <img src="images/profile.jpg" alt="Bill Gates image">
+                        <div class="main_suggestions-name">
+                            <h5>Bill Gates</h5>
+                            <img src="images/globe.svg" alt="Globe Icon">
+                            <span class="color--grey">@BillGates</span>
+                        </div>
+                        <a href="#" class="button button--secondary" aria-label="Follow" role="button">Follow</a>
+                    </div>
+                    <div class="main_suggestions-item">
+                        <img src="images/profile.jpg" alt="Mashable image">
+                        <div class="main_suggestions-name">
+                            <h5>Mashable</h5>
+                            <img src="images/globe.svg" alt="Globe Icon">
+                            <span class="color--grey">@mashable</span>
+                        </div>
+                        <a href="#" class="button button--secondary" aria-label="Follow" role="button">Follow</a>
+                    </div>
+                    <a href="#">Show more</a>
+                </div>
+                <div class="main_trends box">
+                    <h4>Trends</h4>
+                </div>
+                <div class="copyright color--grey">
+                    <a href="#">Terms</a>
+                    <a href="#">Privacy policy</a>
+                    <a href="#">Cookies</a>
+                    <a href="#">Ads info</a>
+                    <a href="#">More <i class="fa fa-chevron-down"></i></a>
+                    <span>© 2020 Twitter, Inc.</span>
+                </div>
             </aside>
         </div>
     </main>
